@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+
+<div class="contain">
+
+    <h1>Home</h1>
+    <p><%=text%></p>
+
+</div>
+
+<% for(var i=0;i<items.length;i++){%>
+    <div class="contain">
+
+        <h1><%=items[i].label%></h1>
+        <p style="display: inline;"><%=items[i].text%></p> <button type="button" class="btn btn-link"><a href="/posts/<%=items[i].label%>">Read More</a></button>
+    
+    </div>
+    <%}%>
+<%- include('partials/footer'); -%>

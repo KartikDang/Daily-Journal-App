@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+
+<br><br>
+<form action="/compose" method="post">
+
+  <div class="input-group mb-3"  style="margin-left: 6.5%; text-align: center; width: 75%;">
+    <span class="input-group-text">Title</span>
+    <input type="text" class="form-control" name="label">
+  </div>  
+
+
+  <div class="input-group" style="margin-left: 6.5%; text-align: center; width: 75%;" >
+    <span class="input-group-text">Post</span>
+    <textarea class="form-control" name="text" cols="30" rows="5"></textarea>
+  </div>
+  <br>  
+  <button type="submit" class="btn btn-dark" style="margin-left: 6.5%; border-radius: 3px; padding-left: 1.5%; padding-right: 1.5%;" >Publish</button>
+</form>
+
+  
+
+<%- include('partials/footer'); -%>
